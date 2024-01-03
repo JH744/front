@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8"  />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>MAIN</title>
+		<style type="text/css">
+			.main, .footer{display: none}
+			/* 초기화 */
+			body, h1, h2, h3, div, p, ul, li, dl, dt, dd{
+				margin:0;
+				padding:0
+			}
+			body{
+				font-family:"나눔고딕", "맑은 고딕", sans-serif;
+				font-size:14px;
+				line-height:1.5
+			}
+			a{
+				text-decoration: none;
+				color:#000 /* inherit */
+			}
+			ul, li{
+				list-style:none
+			}
+			address{
+				font-style: normal
+			}
+			
+			/* 공통 클래스 */
+			.hide{
+				position: absolute;
+				clip: rect(0 0 0 0);
+				width: 1px;
+				height: 1px;
+				margin: -1px;
+				overflow: hidden;
+
+				/* overflow: hidden;
+				position: absolute;
+				width: 0;
+				height: 0;
+				line-height: 0;
+				text-indent: -9999px; */
+			}
+
+			/* header */
+			.header{
+            
+				width:1180px;
+				height:102px;
+				margin:auto;
+				border:2px solid #000;
+                position: relative;
+				
+				
+				
+			}
+
+			/* logo */
+			.logo{
+                position: relative;
+                width:300px;
+				height:70px;
+                left: 10px;
+			}
+			.logo a{
+				display:block;
+			
+				/* 박스 크기 지정 */
+				width:300x; height:70px;
+				/* 배경 이미지 적용 */
+				background:url(/logo2.png) no-repeat;
+				/* 글자 감추기 */
+				text-indent:-9999px
+			}
+
+			/* gnb */
+			.gnb{
+                position: relative;
+				width:1000px;
+				margin:auto;
+				border-top:1px solid #cbcbcb
+			}
+			.gnb ul{
+				display:flex;
+				justify-content: space-between
+			}
+			.menu1 > a{
+					width:119px; height:72px;
+					background:url(images/menu_01.jpg) no-repeat;
+					display:block;
+			}
+			.menu2 > a{
+				width:118px; height:72px;
+				background:url(images/menu_02.jpg) no-repeat;
+				display:block;
+			}
+			.menu3 > a{
+				width:117px; height:72px;
+				background:url(images/menu_03.jpg) no-repeat;
+				display:block;
+			}
+			.menu4 > a{
+				width:120px; height:72px;
+				background:url(images/menu_04.jpg) no-repeat;
+				display:block;
+			}
+
+			/* top menu */
+			.top_menu{
+				width:1000px;
+				margin:auto;
+				position:relative
+			}
+			.top_menu ul{
+				position:absolute;
+				right:0;
+				top:-100px;
+				display:flex
+			}
+			.site_map:after{
+				content:"|";
+				margin:0 10px
+			}
+
+			/* main image */
+			.main_image1{
+				width:1000px; height:519px;
+				background:url(images/main_01.jpg) no-repeat;
+				text-indent:-9999px;
+			}
+
+
+	
+		</style>
+	</head>
+	<body>
+		<header id="header" class="header">			
+            
+            <h1 class="logo"><a href="#">모자</a></h1>
+            <!--메인메뉴 -->
+			<nav class="gnb">
+				<ul>
+					<li class="menu1"><a href="#">자격증 정보</a>
+					<li class="menu2"><a href="#">스터디모집</a></li>
+					<li class="menu3"><a href="#">마이페이지</a></li>
+					<li class="menu4"><a href="#">고객센터</a></li>
+			
+				</ul>
+			</nav>
+
+			 <!--사이드메뉴 -->
+			<div class="top_menu">
+				<ul>
+                    <li id="searchBar" class ="searchBar"><input type="text" ></li>
+					<li class="site_map"><a href="#">SITE MAP</a></li>
+					<li><a href="#">ENGLISH</a></li>
+				</ul>
+			</div>
+		</header>
+			
+		<main id="main" class="main">
+	
+
+		</main>
+
+		<footer id="footer" class="footer">
+	
+		</footer>
+	</body>
+</html>
