@@ -103,6 +103,31 @@
         /*--------header CSS 끝-----*/
 
         /* -------main css---------*/
+        
+        .main{
+        width:1200px;
+        height:50%;
+        margin: auto;
+      
+        }
+
+        .sideBar{
+         width: 260px;
+         height:1200px;
+         background: #DDDDDD;
+         left: 1000px;
+         border-radius: 10px;
+         }
+
+         .sideBar > ul{
+            padding: 60px 0 0 30px;
+
+         }
+
+         .sideBar  li{
+            font-size: 25px;
+            padding: 15px;
+         }
 
 
         /* 배너-레이아웃용 */
@@ -191,7 +216,14 @@
 
 
     <main id="main" class="main">
-        <div class="banner"><hr></div>
+        <nav id="sideBar" class="sideBar" >
+            <ul>
+                <li><a href="#">내정보수정</a></li>
+                <li><a href="#">위시리스트</a></li>
+                <li><a href="#">내문의</a></li>
+                <li><a href="#">스터디작성글</a></li>
+             </ul>
+        </nav>
         <article class="article" id="article">
             <section></section>
             <section></section>
