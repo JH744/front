@@ -131,34 +131,32 @@
 
          /*사이드바 메뉴위치조절*/
          .sideBar > ul{
-            padding: 60px 0 0 30px;
+            padding: 5px 0 0 0;
          }
 
-         /*사이드바메뉴간 거리조절*/
-         .sideBar  li{
-            font-size: 25px;
-            padding: 15px;
+         /*사이드바 마이페이지 타이틀*/
+         .menuTitle{
+            font-size:35px;
+            font-weight: 600;
+            color: #575656;
+            margin: 25px 30px 10px 30px;
+         }
+         
+         /*사이드바메뉴 설정*/
+         .s_menu{
+            font-size: 20px;
+            font-weight: 700;
+            color: #575656;
+            margin: 10px;
+            cursor: pointer;
+            padding: 5px 10px 5px 20px;
          }
 
          /*사이드바메뉴 호버효과*/
-         .s_menu:hover{
-            font-size: 30px;
-            color: #14152c;
-
+         .s_menu:hover {
+            background: #928e8e;
+            color: #ffffff;
          }
-
-
-
-
-
-
-        /* 배너-레이아웃용 
-        .banner {
-            width: 1fr;
-            height: 320px;
-            background: #DDDDDD;
-        }
-        */
 
 
         /*본문*/
@@ -169,70 +167,8 @@
 
         }
 
-      
-        /*"개인정보변경을~" 문구 */
-        .noti{
-            text-align: center;
-            margin-top: 80px;
-            font-size: large;
-            color: #575656;
-        }
-
-        .pwdCheck{
-            border: solid 3px  #DDDDDD;
-            border-radius: 10px;
-            height: 500px;
-            position: relative;
-
-        }
-        .pwdCheckBox{
-            border: solid 3px  #DDDDDD;
-            border-radius: 10px;
-            position: absolute;
-            width: 500px;
-            height: 100px;
-            left: 212px;
-            top: 170px;
-            display: flex;
-            align-items: center ;
-            justify-content: center;
-
-        }
-
-        /*패스워드입력창*/
-        input[type="password"] {
-        
-            font:small-caps;font-size:18px; /*입력창 동그라미설정*/
-            border-radius: 7px;
-            border: 1px solid #acabab;
-            height: 18px;
-            width: 160px;
-            padding-left: 4px;  /*입력창 안쪽 여백*/
-            
-        }
-        
-
-        .submitBtn{
-            position: absolute;
-            width: 80px;
-            height: 30px;
-            top : 300px;
-            left: 425px;
-            border-radius: 10px;
-            border: none;
-            background :  #ED7D31;
-            font-weight: 800px;
-            color: #ffffff;
-            cursor: pointer;
-
-        }
-        .submitBtn:hover {
-            font-weight: bold;
-            width: 90px;
-            height: 40px;
-
-        }
-
+  
+    
         /* -------main css끝--------*/
 
         
@@ -308,11 +244,12 @@
 
     <main id="main" class="main">
         <nav id="sideBar" class="sideBar" >
+            <div class="menuTitle">마이페이지</div>
             <ul>
-                <li class="s_menu"><a href="#">내 정보수정</a></li>
-                <li class="s_menu"><a href="#">위시리스트</a></li>
-                <li class="s_menu"><a href="#">내 문의</a></li>
-                <li class="s_menu"><a href="#">스터디작성글</a></li>
+                <li class="s_menu">내 정보수정</a></li>
+                <li class="s_menu">위시리스트</a></li>
+                <li class="s_menu">내 문의</a></li>
+                <li class="s_menu">스터디작성글</a></li>
              </ul>
         </nav>
         <article class="article" id="article">

@@ -118,6 +118,7 @@
         
         }
 
+   
         /*사이드바 위치 조절 및 크기조절*/
         .sideBar{
          width: 260px;
@@ -131,33 +132,38 @@
 
          /*사이드바 메뉴위치조절*/
          .sideBar > ul{
-            padding: 60px 0 0 30px;
+            padding: 5px 0 0 0;
          }
 
-         /*사이드바메뉴간 거리조절*/
-         .sideBar  li{
-            font-size: 25px;
-            padding: 15px;
+         /*사이드바 마이페이지 타이틀*/
+         .menuTitle{
+            font-size:35px;
+            font-weight: 600;
+            color: #575656;
+            margin: 25px 30px 10px 30px;
+         }
+         
+         /*사이드바메뉴 설정*/
+         .s_menu{
+            font-size: 20px;
+            font-weight: 700;
+            color: #575656;
+            margin: 10px;
+            cursor: pointer;
+            padding: 5px 10px 5px 20px;
          }
 
-         /*사이드메뉴 호버효과*/
-         .s_menu:hover{
-            font-size: 30px;
-            color: #14152c;
-
+         /*사이드바메뉴 호버효과*/
+         .s_menu:hover {
+            background: #928e8e;
+            color: #ffffff;
          }
 
 
 
 
 
-
-        /* 배너-레이아웃용 */
-        .banner {
-            width: 1fr;
-            height: 320px;
-            background: #DDDDDD;
-        }
+      
         /*본문*/
         .article {
             width: 930px;
@@ -166,50 +172,71 @@
 
         }
 
-        /*메인 타이틀 가운데정렬*/
-        .article  span{ 
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
 
-            
-        }
+
  
         /*섹션*/
-        .pwdCheck{
+        .studyList{
             border: solid 3px  #DDDDDD;
+            margin: 60px 0 0 10px;
             border-radius: 10px;
-            height: 500px;
+            height: 850px;
             position: relative;
+        }
+
+        /*작성한 스터디글 보기*/
+        .tableTitle{
+            font-size: 30px;
+            font-weight: 600;
+            margin: 80px 50px 10px 50px;
+          
 
         }
 
-        
+        /*테이블*/
+        .studyListT{
+            width: 90%;
+            margin: 10px auto;
+            border-top: #DDDDDD 3px solid;
+            border-bottom: #DDDDDD 3px solid;
 
-        .submitBtn{
+
+        }
+
+
+
+
+        /*삭제버튼*/
+        .deleteBtn{
             position: absolute;
-            width: 80px;
-            height: 30px;
-            top : 300px;
-            left: 425px;
+            width: 55px;
+            height: 27px;
+            top : 100px;
+            right: 50px;
             border-radius: 10px;
             border: none;
-            background :  #ED7D31;
-            font-weight: 800px;
+            background :  #d1d0cf;
+            font-weight: 600px;
+            font-size: 18px;
+            letter-spacing: 0.1em;
+
+            text-align: center;
             color: #ffffff;
             cursor: pointer;
 
         }
-        .submitBtn:hover {
-            font-weight: bold;
-            width: 90px;
-            height: 40px;
 
+        /*삭제버튼 호버효과*/
+        .deleteBtn:hover {
+            font-weight: bold;
+            background :  #ED7D31;
         }
 
         /* -------main css끝--------*/
 
         
+
+
 
         /* ----footer CSS ---- */
         
@@ -282,17 +309,104 @@
 
     <main id="main" class="main">
         <nav id="sideBar" class="sideBar" >
+            <div class="menuTitle">마이페이지</div>
             <ul>
-                <li class="s_menu"><a href="#">내 정보수정</a></li>
-                <li class="s_menu"><a href="#">위시리스트</a></li>
-                <li class="s_menu"><a href="#">내 문의</a></li>
-                <li class="s_menu"><a href="#">스터디작성글</a></li>
+                <li class="s_menu">내 정보수정</a></li>
+                <li class="s_menu">위시리스트</a></li>
+                <li class="s_menu">내 문의</a></li>
+                <li class="s_menu">스터디작성글</a></li>
              </ul>
         </nav>
         <article class="article" id="article">
-                <section class="myinquireFrame">
+                <section class="studyList">
+                    <div class="tableTitle">작성한 스터디글 보기 </div>
                     
-          
+                    <table class="table  table-striped  studyListT">
+                        <thead>
+                          <tr>
+                            <th scope="col"><input type="checkbox"></th>
+                            <th scope="col">번호</th>
+                            <th scope="col"><a href="#">제목</th>
+                            <th scope="col">작성일</th>
+                            <th scope="col">작성자</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">2</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">3</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">4</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">5</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">6</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">7</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">8</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">9</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox"></td>
+                            <th scope="row">10</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                     
+                 
+                        </tbody>
+                      </table>
+                      <a href="#" class="deleteBtn" id="deleteBtn">삭제</a>
                 </section>
         </article>
     </main>

@@ -118,8 +118,8 @@
         
         }
 
-        /*사이드바 위치 조절 및 크기조절*/
-        .sideBar{
+   /*사이드바 위치 조절 및 크기조절*/
+   .sideBar{
          width: 260px;
          height:980px;
          margin-top: 10px;
@@ -131,23 +131,32 @@
 
          /*사이드바 메뉴위치조절*/
          .sideBar > ul{
-            padding: 60px 0 0 30px;
+            padding: 5px 0 0 0;
          }
 
-         /*사이드바메뉴간 거리조절*/
-         .sideBar  li{
-            font-size: 25px;
-            padding: 15px;
+         /*사이드바 마이페이지 타이틀*/
+         .menuTitle{
+            font-size:35px;
+            font-weight: 600;
+            color: #575656;
+            margin: 25px 30px 10px 30px;
+         }
+         
+         /*사이드바메뉴 설정*/
+         .s_menu{
+            font-size: 20px;
+            font-weight: 700;
+            color: #575656;
+            margin: 10px;
+            cursor: pointer;
+            padding: 5px 10px 5px 20px;
          }
 
-         /*사이드메뉴 호버효과*/
-         .s_menu:hover{
-            font-size: 30px;
-            color: #14152c;
-
+         /*사이드바메뉴 호버효과*/
+         .s_menu:hover {
+            background: #928e8e;
+            color: #ffffff;
          }
-
-
 
 
 
@@ -196,12 +205,14 @@
         }
 
 
+
+        /* 수정버튼 */
         .submitBtn{
             width: 80px;
             height: 30px;
             border-radius: 10px;
             border: none;
-            background :  #ED7D31;
+            background :  #d1d0cf;
             font-weight: 800px;
             color: #ffffff;
             cursor: pointer;
@@ -210,12 +221,13 @@
             right: 55%;
 
         }
+        /*재작성버튼*/
         .resetBtn{
             width: 80px;
             height: 30px;
             border-radius: 10px;
             border: none;
-            background :  #ED7D31;
+            background :  #d1d0cf;
             font-weight: 800px;
             color: #ffffff;
             cursor: pointer;
@@ -224,10 +236,11 @@
             right: 40%;
 
         }
+
+        /* 버튼 호버효과 */
         .hover:hover {
             font-weight: bold;
-            width: 90px;
-            height: 40px;
+            background: #ED7D31;
 
         }
 
@@ -306,11 +319,12 @@
 
     <main id="main" class="main">
         <nav id="sideBar" class="sideBar" >
+            <div class="menuTitle">마이페이지</div>
             <ul>
-                <li class="s_menu"><a href="#">내 정보수정</a></li>
-                <li class="s_menu"><a href="#">위시리스트</a></li>
-                <li class="s_menu"><a href="#">내 문의</a></li>
-                <li class="s_menu"><a href="#">스터디작성글</a></li>
+                <li class="s_menu">내 정보수정</a></li>
+                <li class="s_menu">위시리스트</a></li>
+                <li class="s_menu">내 문의</a></li>
+                <li class="s_menu">스터디작성글</a></li>
              </ul>
         </nav>
         <article class="article" id="article">

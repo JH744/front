@@ -118,8 +118,8 @@
         
         }
 
-        /*사이드바 위치 조절 및 크기조절*/
-        .sideBar{
+       /*사이드바 위치 조절 및 크기조절*/
+       .sideBar{
          width: 260px;
          height:980px;
          margin-top: 10px;
@@ -131,22 +131,32 @@
 
          /*사이드바 메뉴위치조절*/
          .sideBar > ul{
-            padding: 60px 0 0 30px;
+            padding: 5px 0 0 0;
          }
 
-         /*사이드바메뉴간 거리조절*/
-         .sideBar  li{
-            font-size: 25px;
-            padding: 15px;
+         /*사이드바 마이페이지 타이틀*/
+         .menuTitle{
+            font-size:35px;
+            font-weight: 600;
+            color: #575656;
+            margin: 25px 30px 10px 30px;
+         }
+         
+         /*사이드바메뉴 설정*/
+         .s_menu{
+            font-size: 20px;
+            font-weight: 700;
+            color: #575656;
+            margin: 10px;
+            cursor: pointer;
+            padding: 5px 10px 5px 20px;
          }
 
          /*사이드바메뉴 호버효과*/
-         .s_menu:hover{
-            font-size: 30px;
-            color: #14152c;
-
+         .s_menu:hover {
+            background: #928e8e;
+            color: #ffffff;
          }
-
 
 
 
@@ -267,6 +277,28 @@
             text-align: end;
     
         }
+
+
+        
+        /*더보기 버튼*/
+        .more {
+            font-size: 12px;
+            padding: 5px 10px;
+            color: #ffffff;
+            background: #bebdbd;
+            border-radius: 9%;
+            position: absolute;
+            top: 150px;
+            left:110px
+        }
+
+        .more:hover{
+            font-weight: bold;
+            background :  #ED7D31;
+        }
+        
+
+
         /* -------main css끝--------*/
 
         
@@ -313,17 +345,6 @@
 
         }
 
-        /*더보기 버튼*/
-        .more1, .more2, .more3 {
-            font-size: 12px;
-            padding: 5px 10px;
-            color: #ffffff;
-            background: #bebdbd;
-            border-radius: 9%;
-            position: absolute;
-            top: 150px;
-            left:110px
-        }
 
      
 
@@ -358,16 +379,17 @@
 
     <main id="main" class="main">
         <nav id="sideBar" class="sideBar" >
+            <div class="menuTitle">마이페이지</div>
             <ul>
-                <li class="s_menu"><a href="#">내 정보수정</a></li>
-                <li class="s_menu"><a href="#">위시리스트</a></li>
-                <li class="s_menu"><a href="#">내 문의</a></li>
-                <li class="s_menu"><a href="#">스터디작성글</a></li>
+                <li class="s_menu">내 정보수정</a></li>
+                <li class="s_menu">위시리스트</a></li>
+                <li class="s_menu">내 문의</a></li>
+                <li class="s_menu">스터디작성글</a></li>
              </ul>
         </nav>
         <article class="article" id="article">
              <section class="myPage">
-                <div class="myPageTitle">마이페이지</div>
+                <div class="myPageTitle">MY PAGE</div>
                 <div class="line1" ></div>
                 <div class="myRating">
                     <ul>
@@ -387,7 +409,7 @@
                                 <li class="item">담긴 자격증</li>
                                 <li class="itemN">3건</li>
                         </div>
-                        <A href="#" class="more1" id="more1">더보기</A>
+                        <A href="#" class="more" id="more1">더보기</A>
                     </div>
                     
                     <div class="box">
@@ -399,7 +421,7 @@
                             <li class="item">답변완료</li>
                             <li class="itemN">3건</li>
                         </div> 
-                        <A href="#" class="more2" id="more2">더보기</A>
+                        <A href="#" class="more" id="more2">더보기</A>
                     </div>
                     
                     <div class="box">
@@ -411,7 +433,7 @@
                             <li class="item">답변완료</li>
                             <li class="itemN">3건</li>
                         </div>  
-                        <A href="#" class="more3" id="more3">더보기</A>
+                        <A href="#" class="more" id="more3">더보기</A>
                     </div>
 
                 </div>
